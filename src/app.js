@@ -54,12 +54,10 @@ function displayTemperature(response) {
         event.preventDefault();
         let cityInputElement = document.querySelector("#city-input");
         search(cityInputElement.value);
-        
-          }
-// function main () {
-    
-// }
+         }
+
+    function main() {
 search("New York");
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
-
+         }
