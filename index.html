@@ -13,7 +13,9 @@
 </head>
 <body>
     <div class="container">
+        <div class="weather-app-wrapper">
         <div class="weather-app">
+            <div class="overview">
             <h1>New York</h1>
             <ul>
                <li>
@@ -23,14 +25,20 @@
             Clear
                </li>
             </ul>
+            </div>
             <div class="row">
               <div class="col-6">
-    <img 
-    src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" 
-    alt="Cloudy"
-    />
-    12 °C | °F
-              </div>
+                <div class="d-flex weather-temperature">
+                    <img 
+                    src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" 
+                     alt="Cloudy"
+                     class="float-left"
+                     />
+                     <div class="float-left">
+                    <strong>12 </strong><span class="units"><a href="#">°C</a> | <a href="#">°F</a> </span>
+                     </div>
+                </div>
+            </div>
               <div class="col-6">
      <ul>
          <li>
@@ -45,13 +53,13 @@
      </ul>
               </div>
             </div>
-            
-        
+        </div>  
         <small>
                  <a href="https://github.com/NastasiaKarpenko/vanila-weather-app"
                   target="_blank">
-                  Open-source code</a>, by Anastasiia Kovalenko</small>
-    
-                </div>            </div>
+                  Open-source code</a>, by Anastasiia Kovalenko
+        </small>
+        </div>
+    </div>
 </body>
 </html>
