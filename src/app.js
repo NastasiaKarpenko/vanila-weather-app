@@ -43,9 +43,23 @@ function displayTemperature(response) {
         "alt",
         response.data.weather[0].description);
     }
-let apiKey = "8a7de93c990a0dc559c3544abf223aef";
-let unit = "metric";
-let city = "Drogheda";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${unit}`;
 
-axios.get(apiUrl).then(displayTemperature);
+    function search(city) {
+        let apiKey = "8a7de93c990a0dc559c3544abf223aef";
+        let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+        axios.get(apiUrl).then(displayTemperature);
+        }
+
+    function handleSubmit(event) {
+        event.preventDefault();
+        let cityInputElement = document.querySelector("#city-input");
+        search(cityInputElement.value);
+        
+          }
+// function main () {
+    
+// }
+search("New York");
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
+
