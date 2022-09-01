@@ -81,7 +81,7 @@ function displayTemperature(response) {
             fahrenheitLink.classList.remove("active")
             
             temperatureElement.innerHTML = celsiusTemperature;
-           
+           console.log(temperatureElement.innerHTML);
        }
 
     function main() {
