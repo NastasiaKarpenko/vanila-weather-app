@@ -63,8 +63,8 @@ function displayTemperature(response) {
            event.preventDefault();
             let temperatureElement = document.querySelector("#temperature");
             //remove the active class the celsius list
-          //  let celsiusLink=document.querySelector("#celsius-link");
-          //  let fahrenheitLink=document.querySelector("#fahrenheit-link");
+           let celsiusLink=document.querySelector("#celsius-link");
+           let fahrenheitLink=document.querySelector("#fahrenheit-link");
             celsiusLink.classList.remove("active");
             fahrenheitLink.classList.add("active")
             let fahrenheitTemperature = (celsiusTemperature*9)/5+32;
@@ -75,8 +75,8 @@ function displayTemperature(response) {
            event.preventDefault();
            let temperatureElement = document.querySelector("#temperature");
           
-          // let celsiusLink=document.querySelector("#celsius-link");
-          // let fahrenheitLink=document.querySelector("#fahrenheit-link");
+          let celsiusLink=document.querySelector("#celsius-link");
+          let fahrenheitLink=document.querySelector("#fahrenheit-link");
             celsiusLink.classList.add("active");
             fahrenheitLink.classList.remove("active")
             
